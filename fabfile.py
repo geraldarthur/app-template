@@ -466,7 +466,7 @@ host and S3.
 def _confirm(message):
     answer = prompt(message, default="Not at all")
 
-    if answer.lower() not in ('y', 'yes', 'buzz off', 'screw you'):
+    if answer.lower() not in ('y', 'yes', 'frak'):
         exit()
 
 def nuke_confs():
@@ -493,7 +493,7 @@ def nuke_confs():
                 sudo('rm %s' % app_config.UWSGI_LOG_PATH)
                 sudo('rm %s' % app_config.APP_LOG_PATH)
 
-def shiva_the_destroyer():
+def exterminate():
     """
     Deletes the app from s3
     """
@@ -542,7 +542,7 @@ def app_template_bootstrap(project_name=None, repository_name=None):
     local('rm *.pyc')
     local('git add * .gitignore')
     local('git commit -am "Initial import from app-template."')
-    local('git remote add origin https://github.com/nprapps/%s.git' % config['$NEW_REPOSITORY_NAME'])
+    local('git remote add origin https://github.com/geraldarthur/%s.git' % config['$NEW_REPOSITORY_NAME'])
     local('git push -u origin master')
 
     local('npm install less universal-jst -g --prefix node_modules')
