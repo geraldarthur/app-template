@@ -11,7 +11,7 @@ CSS_HEADER = '''
 /*
  * Looking for the full, uncompressed source? Try here:
  *
- * https://github.com/nprapps/%s
+ * https://github.com/geraldarthur/%s
  */
 ''' % app_config.REPOSITORY_NAME
 
@@ -19,7 +19,7 @@ JS_HEADER = '''
 /*
  * Looking for the full, uncompressed source? Try here:
  *
- * https://github.com/nprapps/%s
+ * https://github.com/geraldarthur/%s
  */
 ''' % app_config.REPOSITORY_NAME
 

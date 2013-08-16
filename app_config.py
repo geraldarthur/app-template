@@ -107,10 +107,19 @@ GOOGLE = {
     'IMAGE_URL': TWITTER['IMAGE_URL']
 }
 
+FAVICON = "http://projects.geraldarthur.com/favicon.ico"
+
 """
 SERVICES
 """
-GOOGLE_ANALYTICS_ID = 'UA-5828686-4'
+GOOGLE_ANALYTICS_ID = 'UA-43091946-1'
+DISQUS_SHORTNAME = 'eclectophile'
+
+"""
+APP SPECIFIC
+"""
+# MAPBOX_BASE_LAYER = ''
+# MAPBOX_BASE_LAYER_RETINA = ''
 
 """
 Utilities
