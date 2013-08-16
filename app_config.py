@@ -22,8 +22,8 @@ PROJECT_SLUG = '$NEW_PROJECT_SLUG'
 
 # The name of the repository containing the source
 REPOSITORY_NAME = '$NEW_REPOSITORY_NAME'
-REPOSITORY_URL = 'git@github.com:nprapps/%s.git' % REPOSITORY_NAME
-REPOSITORY_ALT_URL = None # 'git@bitbucket.org:nprapps/%s.git' % REPOSITORY_NAME'
+REPOSITORY_URL = 'git@github.com:geraldarthur/%s.git' % REPOSITORY_NAME
+REPOSITORY_ALT_URL = None # 'git@bitbucket.org:geraldarthur/%s.git' % REPOSITORY_NAME'
 
 # The name to be used in paths on the server
 PROJECT_FILENAME = '$NEW_PROJECT_FILENAME'
@@ -31,11 +31,11 @@ PROJECT_FILENAME = '$NEW_PROJECT_FILENAME'
 """
 DEPLOYMENT
 """
-PRODUCTION_S3_BUCKETS = ['apps.npr.org', 'apps2.npr.org']
-STAGING_S3_BUCKETS = ['stage-apps.npr.org']
+PRODUCTION_S3_BUCKETS = ['projects.geraldarthur.com', 'projects2.geraldarthur.com']
+STAGING_S3_BUCKETS = ['stage.geraldarthur.com']
 
-PRODUCTION_SERVERS = ['cron.nprapps.org']
-STAGING_SERVERS = ['50.112.92.131']
+# PRODUCTION_SERVERS = ['cron.geraldarthur.org']
+# STAGING_SERVERS = ['50.112.92.131']
 
 # Should code be deployed to the web/cron servers?
 DEPLOY_TO_SERVERS = False
@@ -107,13 +107,6 @@ GOOGLE = {
     'IMAGE_URL': TWITTER['IMAGE_URL']
 }
 
-NPR_DFP = {
-    'STORY_ID': '203618536',
-    'TARGET': 'News_NPR_News_Investigations',
-    'ENVIRONMENT': 'NPRTEST',
-    'TESTSERVER': 'true'
-}
-
 """
 SERVICES
 """
@@ -127,7 +120,8 @@ def get_secrets():
     A method for accessing our secrets.
     """
     secrets = [
-        'EXAMPLE_SECRET'
+        'AWS_ACCESS_KEY_ID'
+        'AWS_SECRET_ACESS_KEY'
     ]
 
     secrets_dict = {}
