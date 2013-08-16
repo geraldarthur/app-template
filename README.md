@@ -1,4 +1,4 @@
-nprapps' Project Template
+geraldarthur's Project Template
 =========================
 
 * [About this template](#about-this-template)
@@ -11,9 +11,9 @@ nprapps' Project Template
 About this template
 -------------------
 
-This template provides a a project skeleton suitable for NPR projects that are designed to be served as flat files. Facilities are provided for rendering html from data, compiling LESS into CSS, deploying to S3, installing cron jobs on servers, copy-editing via Google Spreadsheets and a whole bunch of other stuff.
+This template provides a a project skeleton suitable for projects that are designed to be served as flat files. Facilities are provided for rendering html from data, compiling LESS into CSS, deploying to S3, installing cron jobs on servers, copy-editing via Google Spreadsheets and a whole bunch of other stuff.
 
-**Please note:** This project is not intended to be a generic solution. We strongly encourage those who love the app-template to use it as a basis for their own project template. We have no plans to remove NPR-specific code from this project.
+**Please note:** This project is not intended to be a generic solution. We strongly encourage those who love the app-template to use it as a basis for their own project template.
 
 Copy the template
 -----------------
@@ -21,7 +21,7 @@ Copy the template
 Create a new repository on Github. Everywhere you see ``$NEW_PROJECT_NAME`` in the following script, replace it with the name of the repository you just created.
 
 ```
-git clone git@github.com:nprapps/app-template.git $NEW_PROJECT_NAME
+git clone git@github.com:geraldarthur/app-template.git $NEW_PROJECT_NAME
 cd $NEW_PROJECT_NAME
 
 # Optional: checkout an initial project branch
