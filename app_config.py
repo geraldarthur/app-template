@@ -98,7 +98,7 @@ FACEBOOK = {
     'DESCRIPTION': PROJECT_DESCRIPTION,
     # Should be square. No documented restrictions on size
     'IMAGE_URL': TWITTER['IMAGE_URL'],
-    'APP_ID': '138837436154588'
+    'APP_ID': '451779264921220'
 }
 
 GOOGLE = {
